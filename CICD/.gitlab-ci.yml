@@ -1,0 +1,29 @@
+image: node:18.17.1-alpine
+
+cache:
+  paths:
+    - node_module/
+
+before_script:
+  - aws --version
+
+stages:
+  - validate
+  - deploy
+
+validate:
+  before_script:
+  - *aws-prep
+  stage: validate
+  script:
+    - echo $MY_ACCESS_KEY  
+  only:
+    - branches
+
+deploy to s3:
+  stage: deploy
+  script:
+    - echo "Copy application files to S3 bucket" 
+    - aws s3 cp build/ s3://$S3_BUCKET
+  only:
+    - main
