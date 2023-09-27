@@ -1,2 +1,1 @@
-# Iac_AWS_ASG_for_counter-app_with_auto_refresh_and-CICD
-Iac_AWS_ASG_for_counter-app_with_auto_refresh_and CICD
+# Deploy counter-app in the highly available auto-scaling group with auto refresh from S3 bucket using Terraform and code update using CTCD  
