@@ -42,7 +42,7 @@ Goto the folder ASG-ADv2 and Run below commands to create S3 and ASG with EC2 in
 5. Run the pipeline if not triggered automatically
 
 ### Step 4: Test Application
-1. Goto EC2 on the AWS comsole and copy public ip of the any EC2 instance and browse it in the internet browser. apache web page should be available or else goto ALB and copy dns name and browse it in the internet browser. apache web page should be available
+1. Goto EC2 on the AWS comsole and copy public ip of the any EC2 instance and browse it in the internet browser. web page should be available or else goto ALB and copy dns name and browse it in the internet browser
    
 2. Goto S3 bucket and verify application files are transfered from GitLab repo
    
